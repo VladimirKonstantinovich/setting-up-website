@@ -1,0 +1,18 @@
+	
+	Full screen background image
+
+	
+		main .benefits{
+    			margin-bottom: var(--section-margin);
+    			position: relative;
+			}
+
+		main .benefits::before{
+    			content: '';
+    			position: absolute;
+    			inset: 0;
+    			background-image: url('design-elements/wall.jpg');
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			z-index: -1;
+			}

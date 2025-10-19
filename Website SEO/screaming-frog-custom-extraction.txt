@@ -1,0 +1,15 @@
+		С помощью Screaming Frog можно сделать Custom Extraction для того, чтобы изучить внешние ссылки:
+
+			1)Надо взять все внешние ссылки сайта: с помощью Яндекса Вебмастера или Google Search Console.
+			2)С Google Search Console в разделе ссылки взять и экспартировать внешние ссылки в таблицу.
+			3)Заходим в Configuration -> Custom -> Extraction и выставляем такие значения: 
+			Там выставляем Xpath и Extract text и заполняем поля для проверки
+				Anchor: //a[contains(@href,'site.ru')]
+				URL: //a[contains(@href,'site.ru')]/@href
+				REL: //a[contains(@href,'site.ru')]/@rel
+				Околоссылочное: //a[contains(@href,'site.ru')]/..
+	 
+			4)В Screaming Frog в Mode включаеме режим List и нажимаем upload и вставляем ссылки.
+			5)Запускаем анализ ссылок и проверяем на муссорные ссылки, проблемные ссылки и другие
+			  в Site structure можно посмотреть разделы от куда дут ссылки и после анализа экспортируем ссылки в Export для дальнейшей работы.
+			

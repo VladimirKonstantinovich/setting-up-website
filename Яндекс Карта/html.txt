@@ -1,0 +1,8 @@
+
+	1) Добавить на сайт блок яндекс карты: 
+	<div class="get-to-us-map" id="yandex-map"></div>  
+	
+	2)Подключить скрипт яндекс API:
+		    <script src="https://api-maps.yandex.ru/2.1/?apikey=7953d849-3712-458e-912c-5a6a5aa2c38a&lang=ru_RU" type="text/javascript"></script>
+
+	

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: hsl(203, 38%, 57%);
+    --primary-color-drk: hsl(214, 72%, 56%);
+    --secondary-color: hsl(41, 94%, 72%);
+    --secondary-color-mild-drk: hsl(39, 100%, 55%);
+    --secondary-text-color: rgb(224, 224, 224);
+    --section-margin: 80px;
+    --section-margin: 5rem;
+    --max-section-width: 1300px;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    letter-spacing:  1px;
+    line-height: 1.7;
+    color: rgb(20, 20, 20);
+}
+
+.center{
+    text-align: center;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+::-moz-selection { /*  For Firefox */
+    background: rgb(87, 161, 201);
+  }
+  
+::selection {
+    background: rgb(254, 180, 82);
+    color: white;
+  }  
+
+button{
+    background-color: transparent;
+    border: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1{
+    font-size: clamp(1.8rem, 4vw + 1rem, 3rem);
+    font-weight: 600;
+    line-height: 1;
+    max-width: 30ch;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+h2{
+    font-size: clamp(1.3rem, 4vw + 1rem, 2.5rem);
+    font-weight: 600;
+    margin: 2rem 0;
+    line-height: 1.1;
+}
+
+h3{
+    font-size: clamp(1rem, 1vw + 1.2rem, 1.8rem);
+    font-weight: 500;
+    margin: 2rem 0;
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ 
+/* End of reset */

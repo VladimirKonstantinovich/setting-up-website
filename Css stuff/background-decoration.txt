@@ -1,0 +1,19 @@
+	
+	Background decoration:
+
+	main .benefits .benefit{
+    		position: relative;
+   		padding-top: 3rem;
+		}
+
+	main .benefits .benefit::before{
+    		content: '';
+    		position: absolute;
+    		top: 0;
+    		left: -10%;
+    		background-image: url('design-elements/lines.jpg');
+    		background-size: contain;
+    		width: 120%;
+    		height: 18px;
+    		z-index: -1;
+		}

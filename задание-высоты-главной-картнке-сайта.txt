@@ -1,0 +1,22 @@
+	
+	Как это работает ?
+
+		1) Мы считаем высоту меню сайта (навигации).
+		2) Считаем высоту от начала экрана до ближнего элемента на картинке. (текст или что-то другое)
+		3) Вычитаем со второй высоты, высоту меню и прибавляем высоту крайнего элемента + немного дополнительной.
+		4) Задаём высату картинке: при загрузке и ресайзе
+
+	Код JS:
+		let imageElement = document.querySelector('.header-review .review-rating');
+		let backgroundImage = document.querySelector('.header-content .header-image');
+		let navigation = document.querySelector('.nav-container');
+
+		function calculateImageHeight(){
+   		 let topOffset = imageElement.offsetTop;
+   		 let navigation= = navigation.offsetHeight;
+   		 backgroundImage.style.height = `${topOffset - navContainerHeight + 70}px`;
+		}
+
+		calculateImageHeight();
+		window.addEventListener("resize", calculateImageHeight);
+		window.addEventListener("load", calculateImageHeight);
