@@ -1,4 +1,11 @@
-		
+	1. -------------------- Проверяем задан ли пользователь --------------------
+		git config --get user.name
+		git config --get user.email
+	
+	2. -------------------- Если пользователь не задан --------------------
+		git config --add --global user.name 'github_user_name'
+		git config --add --global user.email 'github_user_email'
+
 	-------------------- Создание репозтории и добавление --------------------
 
 		git init
